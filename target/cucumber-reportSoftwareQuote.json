@@ -1,0 +1,243 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6483452900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StartProjectStepDef.BeforeStep()"
+            }
+          },
+          {
+            "result": {
+              "duration": 123983400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StartProjectStepDef.BeforeStep1()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "User fills in all the required information for Software Qoute",
+        "description": "",
+        "id": "user-completes-a-form-for-software-quote;user-fills-in-all-the-required-information-for-software-qoute;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5019550600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to sovtech website \"https://www.sovtech.co.za\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.sovtech.co.za",
+                  "offset": 35
+                }
+              ],
+              "location": "StartProjectStepDef.userNavigatesToSovtechWebsite(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61932600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User needs to be on sovtech home_page",
+            "match": {
+              "location": "StartProjectStepDef.userNeedsToBeOnSovtechHome_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1812825700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Clients dropdown",
+            "match": {
+              "location": "SoftwareQouteStepDef.userClicksOnClientsDropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28254400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User scrolls down to Software Quote",
+            "match": {
+              "location": "SoftwareQouteStepDef.userScrollsDownToSoftwareQuote()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30102616300,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027your_name\u0027]\"}\n  (Session info: chrome\u003d101.0.4951.67)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027KINETICSKUNK-AF\u0027, ip: \u0027192.168.18.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_321\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\Hp\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:49920}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f699caef8657c9abcd26e4a1cf34a157\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027your_name\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat sovtech.co.za.factorypageobjects.OurClientsPgObjects.enter_FullName(OurClientsPgObjects.java:65)\r\n\tat sovtech.co.za.StepDefinition.SoftwareQouteStepDef.userEntersFullNames(SoftwareQouteStepDef.java:22)\r\n\tat ✽.And User enters Full Names \"Aubrey Fredericks\"(GetSoftwareQuote.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "User enters Full Names \"Aubrey Fredericks\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Aubrey Fredericks",
+                  "offset": 24
+                }
+              ],
+              "location": "SoftwareQouteStepDef.userEntersFullNames(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User enters Work Email Address \"afredericksdvt@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "afredericksdvt@gmail.com",
+                  "offset": 32
+                }
+              ],
+              "location": "SoftwareQouteStepDef.userEntersWorkEmailAddress(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User enters Mobile Number \"0847389926\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0847389926",
+                  "offset": 27
+                }
+              ],
+              "location": "SoftwareQouteStepDef.userEntersMobileNumber(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 12,
+                "value": "#    And User clicks Company size"
+              }
+            ],
+            "line": 13,
+            "name": "User selects second option for Company Size",
+            "match": {
+              "location": "SoftwareQouteStepDef.userSelectsSecondOptionForCompanySize()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 14,
+                "value": "#    And User clicks on How can we help you"
+              }
+            ],
+            "line": 15,
+            "name": "User selects third option for How can we help you",
+            "match": {
+              "location": "SoftwareQouteStepDef.userSelectsThirdOptionForHowCanWeHelpYou()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User user enters a message \"need assistance in scaling engineer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "need assistance in scaling engineer",
+                  "offset": 28
+                }
+              ],
+              "location": "SoftwareQouteStepDef.userUserEntersAMessage(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User clicks button Submit",
+            "match": {
+              "location": "SoftwareQouteStepDef.userClicksButtonSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User closes browser",
+            "match": {
+              "location": "StartProjectStepDef.userClosesBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "User completes a form for Software Quote",
+    "description": "",
+    "id": "user-completes-a-form-for-software-quote",
+    "keyword": "Feature",
+    "uri": "GetSoftwareQuote.feature"
+  }
+]

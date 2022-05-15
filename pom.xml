@@ -19,12 +19,6 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>7.3.0</version>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/pl.pragmatists/JUnitParams -->
         <dependency>
@@ -163,6 +157,13 @@
             <artifactId>guava</artifactId>
             <version>31.1-jre</version>
         </dependency>
+
+      <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+      <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>4.0.0</version>
+      </dependency>
     </dependencies>
 
     <build>
