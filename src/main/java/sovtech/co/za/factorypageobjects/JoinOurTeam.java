@@ -9,7 +9,7 @@ public class JoinOurTeam {
 
     WebDriver driver;
 
-    @FindBy(xpath="//header/div[1]/div[2]/div[1]/nav[1]/ul[1]/li[4]/a[1]/span[1]")
+    @FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[2]/div[1]/nav[1]/ul[1]/li[4]/a[1]/span[1]")
     private WebElement dprAboutUs;
 
     @FindBy(xpath="//span[contains(text(),'Join our team')]")
